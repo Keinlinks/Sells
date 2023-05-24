@@ -2,7 +2,7 @@
   <nav class="navbar navbar-collapse bg-info d-flex rounded-bottom">
     <div class="d-flex p-1 col-lg-3">
       <div class="menu_left d-flex align-items-center text-danger">
-        <a href="#" class="mx-1">Inicio</a>
+        <a routerLink="" class="mx-1">Inicio</a>
         <div class="dropdown p-3">
           <button
             class="btn dropdown-toggle"
@@ -36,8 +36,12 @@
     </div>
     <div class="d-flex col-lg-3 justify-content-end">
       <div class="mx-1 d-flex">
-        <button class="btn btn-primary mx-1">Iniciar Sesion</button>
-        <button class="btn btn-primary mx-1">Registrarse</button>
+        <button class="btn btn-primary mx-1" routerLink="login">
+          Iniciar Sesion
+        </button>
+        <button class="btn btn-primary mx-1" routerLink="register">
+          Registrarse
+        </button>
       </div>
     </div>
   </nav>

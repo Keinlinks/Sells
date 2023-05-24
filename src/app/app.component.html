@@ -1,4 +1,7 @@
-<app-header id="header" [ngClass]="{ fixed: isfixed }"></app-header>
-<router-outlet></router-outlet>
-<hr />
-<app-footer></app-footer>
+<div id="contenedor">
+  <div [ngClass]="{ relative: isfixed, headerSpace: !isfixed }">espacio</div>
+  <app-header id="header" [ngClass]="{ fixed: isfixed }"></app-header>
+  <router-outlet></router-outlet>
+  <hr />
+  <app-footer></app-footer>
+</div>
