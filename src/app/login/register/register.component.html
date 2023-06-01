@@ -1,36 +1,49 @@
-<div class="container">
+<div class="container my-5">
   <form>
     <div class="form-row d-flex flex-column align-items-center">
-      <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
+      <div class="col-md-4 mb-3 d-flex flex-column my-1">
         <label for="validationDefault01">Nombre</label>
         <input
           type="text"
           class="form-control"
-          id="validationDefault01"
+          id="nombre"
           placeholder="Nombre..."
           value=""
           required
         />
       </div>
-      <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
+      <div class="col-md-4 mb-3 d-flex flex-column my-1">
         <label for="validationDefault02">Apellidos</label>
         <input
           type="text"
           class="form-control"
-          id="validationDefault02"
+          id="apellido"
           placeholder="Apellidos..."
           value=""
           required
         />
       </div>
-      <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
+      <div class="col-md-4 mb-3 d-flex flex-column my-1">
         <label for="validationDefaultUsername">Correo</label>
         <div class="input-group">
           <input
             type="text"
             class="form-control"
-            id="validationDefaultUsername"
+            id="correo"
             placeholder="Correo"
+            aria-describedby="inputGroupPrepend2"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 d-flex flex-column my-1">
+        <label for="validationDefaultUsername">Contrasenia</label>
+        <div class="input-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Contrasenia"
             aria-describedby="inputGroupPrepend2"
             required
           />

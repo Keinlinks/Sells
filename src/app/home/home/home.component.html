@@ -8,7 +8,7 @@
               <label class="mr-sm-2 my-2">Filtrar</label>
             </div>
 
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <select class="custom-select" id="inlineFormCustomSelect">
               <option selected>Precio...</option>
               <option value="1">$0-$50.000</option>
               <option value="2">$50.000-$100.000</option>
@@ -112,13 +112,13 @@
   </section>
 
   <section id="products" class="col-10 border border-secondary">
-    <div class="container-fluid">
+    <div class="container-fluid align-items-center">
       <select class="form-control form-control-sm w-25 my-4">
         <option>Mas nuevo...</option>
         <option>Mas antiguo...</option>
       </select>
-      <div class="products my-5 d-flex flex-wrap">
-        <div class="d-flex flex-wrap">
+      <div class="products my-5 mx-5">
+        <div class="d-flex flex-wrap justify-content-start">
           <app-card
             *ngFor="let producto of productos"
             [datos]="producto"
