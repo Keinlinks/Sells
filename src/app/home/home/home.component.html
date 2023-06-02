@@ -1,6 +1,6 @@
 <main class="container-fluid my-5 row">
   <section id="filters" class="col-2">
-    <form>
+    <form [formGroup]="filtros_forms">
       <div class="container border border-primary">
         <div class="form-row align-items-center">
           <div class="col-auto my-1">
@@ -8,11 +8,15 @@
               <label class="mr-sm-2 my-2">Filtrar</label>
             </div>
 
-            <select class="custom-select" id="inlineFormCustomSelect">
-              <option selected>Precio...</option>
-              <option value="1">$0-$50.000</option>
-              <option value="2">$50.000-$100.000</option>
-              <option value="3">&lt;$100.000</option>
+            <select
+              class="custom-select"
+              id="inlineFormCustomSelect"
+              formControlName="precio"
+            >
+              <option selected value="Todo">Todo</option>
+              <option value="0/50000">$0-$50.000</option>
+              <option value="50000/100000">$50.000-$100.000</option>
+              <option value="100000">&lt;$100.000</option>
             </select>
           </div>
           <hr />
@@ -23,6 +27,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="categoriaCheck1"
+                formControlName="categoria_1"
               />
               <label class="custom-control-label mx-2" for="categoriaCheck1"
                 >categoria 1</label
@@ -33,6 +38,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="categoriaCheck2"
+                formControlName="categoria_2"
               />
               <label class="custom-control-label mx-2" for="categoriaCheck2"
                 >categoria 2</label
@@ -43,6 +49,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="categoriaCheck3"
+                formControlName="categoria_3"
               />
               <label class="custom-control-label mx-2" for="categoriaCheck3"
                 >categoria 3</label
@@ -53,6 +60,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="categoriaCheck4"
+                formControlName="categoria_4"
               />
               <label class="custom-control-label mx-2" for="categoriaCheck4"
                 >categoria 4</label
@@ -67,6 +75,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="tipoCheck1"
+                formControlName="tipo_1"
               />
               <label class="custom-control-label mx-2" for="tipoCheck1"
                 >tipo 1</label
@@ -77,6 +86,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="tipoCheck2"
+                formControlName="tipo_2"
               />
               <label class="custom-control-label mx-2" for="tipoCheck2"
                 >tipo 2</label
@@ -87,6 +97,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="tipoCheck3"
+                formControlName="tipo_3"
               />
               <label class="custom-control-label mx-2" for="tipoCheck3"
                 >tipo 3</label
@@ -97,6 +108,7 @@
                 type="checkbox"
                 class="custom-control-input text"
                 id="tipoCheck4"
+                formControlName="tipo_4"
               />
               <label class="custom-control-label mx-2" for="tipoCheck4"
                 >tipo 4</label
@@ -109,24 +121,30 @@
         </div>
       </div>
     </form>
+    <button (click)="prueba()">prueba</button>
   </section>
 
   <section id="products" class="col-10 border border-secondary">
     <div class="container-fluid align-items-center">
-      <select class="form-control form-control-sm w-25 my-4">
-        <option>Mas nuevo...</option>
-        <option>Mas antiguo...</option>
-      </select>
+      <form [formGroup]="filtro_tiempo">
+        <select
+          class="form-control form-control-sm w-25 my-4"
+          formControlName="tiempo"
+        >
+          <option selected>Mas nuevo...</option>
+          <option>Mas antiguo...</option>
+        </select>
+      </form>
+
       <div class="products my-5 mx-5">
         <div class="d-flex flex-wrap justify-content-start">
-          <app-card
-            *ngFor="let producto of productos"
-            [datos]="producto"
-          ></app-card>
+          <ng-container
+            *ngFor="let producto of productos | filter : search | filterDate"
+          >
+            <app-card [datos]="producto"></app-card>
+          </ng-container>
         </div>
       </div>
     </div>
   </section>
 </main>
-
-<!--<button (click)="prueba()">prueba</button>  -->
