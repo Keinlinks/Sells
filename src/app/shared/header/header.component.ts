@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { SearchServiceService } from 'src/app/search-service.service';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.sass'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
-  logeado: boolean = true;
+  constructor(private searchService: SearchServiceService) {}
+  logeado: boolean = false;
+  search!: string;
+  @Output() emitir = new EventEmitter<any>();
   ngOnInit(): void {}
+
+  buscar() {
+    this.searchService.searchQuery.next(this.search);
+  }
 }

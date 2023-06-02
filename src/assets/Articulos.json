@@ -2,61 +2,43 @@
   {
     "nombre": "zapato",
     "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "computador_1",
+    "tipo": "computacion",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "remo",
+    "tipo": "deporte",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "control PC",
+    "tipo": "videojuegos",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "adaptador USB",
+    "tipo": "computacion",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "cargador tipo-C",
+    "tipo": "Celulares",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   },
   {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
-  },
-  {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
-  },
-  {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
-  },
-  {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
-  },
-  {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
-  },
-  {
-    "nombre": "zapato",
-    "tipo": "calzado",
-    "descripcion": "Zapatillas marca desconocida"
+    "nombre": "polera",
+    "tipo": "moda",
+    "descripcion": "Zapatillas marca desconocida",
+    "fecha": "02/05/2023"
   }
 ]
