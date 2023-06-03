@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
       this.isThrottled = true;
       const scrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      console.log(scrollPosition);
+
       this.isfixed = scrollPosition > 300;
 
       setTimeout(() => {

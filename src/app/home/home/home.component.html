@@ -121,25 +121,24 @@
         </div>
       </div>
     </form>
-    <button (click)="prueba()">prueba</button>
   </section>
 
   <section id="products" class="col-10 border border-secondary">
     <div class="container-fluid align-items-center">
-      <form [formGroup]="filtro_tiempo">
-        <select
-          class="form-control form-control-sm w-25 my-4"
-          formControlName="tiempo"
-        >
-          <option selected>Mas nuevo...</option>
-          <option>Mas antiguo...</option>
-        </select>
-      </form>
+      <select
+        class="form-control form-control-sm w-25 my-4"
+        [(ngModel)]="orden"
+      >
+        <option selected value="true">Mas nuevo...</option>
+        <option value="false">Mas antiguo...</option>
+      </select>
 
       <div class="products my-5 mx-5">
         <div class="d-flex flex-wrap justify-content-start">
           <ng-container
-            *ngFor="let producto of productos | filter : search | filterDate"
+            *ngFor="
+              let producto of productos | filterDate : orden | filter : search
+            "
           >
             <app-card [datos]="producto"></app-card>
           </ng-container>

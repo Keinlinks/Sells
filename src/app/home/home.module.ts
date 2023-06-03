@@ -5,10 +5,11 @@ import { CardComponent } from './card/card.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { FilterDatePipe } from './filter-date.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent, CardComponent, FilterPipe, FilterDatePipe],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   exports: [HomeComponent, CardComponent],
 })
 export class HomeModule {}

@@ -3,42 +3,42 @@
     "nombre": "zapato",
     "tipo": "calzado",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "02/05/2020"
   },
   {
     "nombre": "computador_1",
     "tipo": "computacion",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "09/07/2023"
   },
   {
     "nombre": "remo",
     "tipo": "deporte",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "03/01/2023"
   },
   {
     "nombre": "control PC",
     "tipo": "videojuegos",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "12/10/2023"
   },
   {
     "nombre": "adaptador USB",
     "tipo": "computacion",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "06/08/2023"
   },
   {
     "nombre": "cargador tipo-C",
     "tipo": "Celulares",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "23/10/2021"
   },
   {
     "nombre": "polera",
     "tipo": "moda",
     "descripcion": "Zapatillas marca desconocida",
-    "fecha": "02/05/2023"
+    "fecha": "10/02/2022"
   }
 ]

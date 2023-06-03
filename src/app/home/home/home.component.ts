@@ -12,6 +12,7 @@ import { ServicioService } from 'src/app/servicio.service';
 export class HomeComponent implements OnInit {
   productos: any[] = [];
   search: string = '';
+  orden: string = 'true';
   filtros_forms = new FormGroup({
     precio: new FormControl('Todo'),
     categoria_1: new FormControl(''),
@@ -23,9 +24,7 @@ export class HomeComponent implements OnInit {
     tipo_3: new FormControl(''),
     tipo_4: new FormControl(''),
   });
-  filtro_tiempo = new FormGroup({
-    tiempo: new FormControl('Mas nuevo...'),
-  });
+
   constructor(
     private servicio: ServicioService,
     private searchService: SearchServiceService
@@ -36,7 +35,7 @@ export class HomeComponent implements OnInit {
     });
   }
   prueba() {
-    console.log(this.filtros_forms);
+    console.log(this.orden);
   }
 
   ngOnInit(): void {
